@@ -1,0 +1,45 @@
+<style>
+  .parent {
+    display: flex;
+    /*eje ´principal*/
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border: 4px solid black;
+    width: 250px;
+    height: 500px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    /*entre elementos, no laterales*/
+    gap: 16px;
+
+  }
+
+  .item {
+    border: 1px solid black;
+    box-sizing: border-box;
+    opacity: .9;
+    /* height: 200px; */
+    /* display: block; */
+    background: #09f;
+    height: 50px;
+    width: 50px;
+  }
+
+  .item:first-child {
+    background-color: yellow;
+  }
+
+  .item:last-child {
+    background-color: red;
+  }
+</style>
+<section class="parent">
+  <div class="item">Primero</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+  <div class="item">Primero</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+</section>
